@@ -371,21 +371,21 @@ Controls the ChromeDriver and allows you to drive the browser.  You
 will need to download the ChromeDriver executable from:
 http://code.google.com/p/selenium/downloads/list
 
-- class WebDriver(executable_path="chromedriver", port=0)
+.. class:: WebDriver(executable_path="chromedriver", port=0)
 
-  base: selenium.webdriver.remote.webdriver.WebDriver
+   base: selenium.webdriver.remote.webdriver.WebDriver
 
-  *executable_path:* path to the executable. If the default is used it
-  assumes the executable is in the $PATH
+   *executable_path:* path to the executable. If the default is used it
+   assumes the executable is in the $PATH
 
-  *port:* port you would like the service to run, if left as 0, a free
-  port will be found
+   *port:* port you would like the service to run, if left as 0, a free
+   port will be found
 
-  - save_screenshot(filename)
+   .. method:: save_screenshot(filename)
 
-    Gets the screenshot of the current window. Returns False if there
-    is any IOError, else returns True. Use full paths in your
-    filename.
+      Gets the screenshot of the current window. Returns False if there
+      is any IOError, else returns True. Use full paths in your
+      filename.
 
 
 Remote WebDriver
@@ -1002,7 +1002,7 @@ will be performed through this WebElement interface.
       Find and return list of multiple elements by CSS selector.
 
    .. method:: send_keys(*value)
-    
+
       Simulates typing into the element.
 
    **RenderedWebElement Items**
